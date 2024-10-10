@@ -1,0 +1,90 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow-y: auto; /* Permite rolagem vertical */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff; /* Contraste com o fundo */
+    margin: 20px 0 55px 0;
+    font-size: 2em; /* Tamanho maior */
+  }
+  
+  .gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: column; /* Coloca as fotos em coluna, uma embaixo da outra */
+    justify-content: center;
+    align-items: center; /* Centraliza as fotos na tela */
+    gap: 70px; /* Espaçamento entre fotos */
+  }
+  
+  .photo {
+    background: rgb(71, 70, 70);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(241, 224, 224, 0.2);
+    overflow: hidden;
+    width: 400px; /* Reduzindo o tamanho das fotos */
+    height: 500px; /* Altura menor */
+    transition: transform 0.3s;
+  }
+  
+  .photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+  }
+  
+  .photo p {
+    font-size: 1em;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Ajustes para os corações caindo */
+  .falling-hearts {
+    position: fixed; /* Fixado para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cobrir toda a largura da tela */
+    height: 100vh; /* Cobrir toda a altura da tela */
+    pointer-events: none; /* Permite interação com elementos abaixo */
+    overflow: hidden; /* Oculta os corações que saem da tela */
+  }
+  
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('../src/coracao-png.webp') no-repeat center;
+    background-size: contain;
+    animation: fall linear forwards;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-50px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh); /* Faz os corações caírem até o final da tela */
+      opacity: 0;
+    }
+  }
+  
