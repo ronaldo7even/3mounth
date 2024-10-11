@@ -5,6 +5,21 @@ onload = () => {
     }, 1000);
   };
 
+<<<<<<< HEAD
+  onload = () => {
+    const c = setTimeout(() => {
+      document.body.classList.remove("not-loaded");
+      clearTimeout(c);
+  
+      // Mostrar botão para ver fotos após a animação das flores
+      const btnContainer = document.querySelector(".button-container");
+      btnContainer.style.display = "block";
+    }, 4000); // Exibir após 4 segundos (ajustar se necessário)
+  };
+  
+
+
+=======
   document.addEventListener("DOMContentLoaded", function () {
     const fadeButton = document.getElementById("fadeButton");
   
@@ -14,3 +29,4 @@ onload = () => {
     }, 3000); // Tempo em milissegundos até o botão aparecer
   });
   
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f

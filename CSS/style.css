@@ -1185,6 +1185,8 @@ body {
     align-items: center; /* Centraliza os itens horizontalmente */
 }
 
+<<<<<<< HEAD
+=======
 .button-container {
   position: absolute; /* Posiciona o botão de forma absoluta */
   bottom: 20px; /* Alinha o botão na parte inferior da página */
@@ -1213,3 +1215,4 @@ body {
 .fade-in.show {
   opacity: 1; /* Torna visível */
 }
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f

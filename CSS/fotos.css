@@ -1,16 +1,29 @@
 body {
+<<<<<<< HEAD
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden; /* Evita rolagem devido aos corações */
+=======
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #000000;
     overflow-y: auto; /* Permite rolagem vertical */
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
   }
   
   h1 {
     text-align: center;
+<<<<<<< HEAD
+    color: #4A4A4A;
+    margin: 20px 0;
+=======
     color: #ffffff; /* Contraste com o fundo */
     margin: 20px 0 55px 0;
     font-size: 2em; /* Tamanho maior */
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
   }
   
   .gallery-container {
@@ -18,12 +31,31 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+<<<<<<< HEAD
+=======
     display: flex;
     flex-direction: column;
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
   }
   
   .gallery {
     display: flex;
+<<<<<<< HEAD
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .photo {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto */
+=======
     flex-direction: column; /* Coloca as fotos em coluna, uma embaixo da outra */
     justify-content: center;
     align-items: center; /* Centraliza as fotos na tela */
@@ -38,6 +70,7 @@ body {
     width: 400px; /* Reduzindo o tamanho das fotos */
     height: 500px; /* Altura menor */
     transition: transform 0.3s;
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
   }
   
   .photo:hover {
@@ -46,12 +79,32 @@ body {
   
   .photo img {
     width: 100%;
+<<<<<<< HEAD
+    height: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+=======
     height: 100%;
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
   }
   
   .photo p {
     font-size: 1em;
+<<<<<<< HEAD
+    color: #555;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  /* Estilos para os corações caindo */
+  .falling-hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+=======
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -64,12 +117,23 @@ body {
     left: 0;
     width: 100vw; /* Cobrir toda a largura da tela */
     height: 100vh; /* Cobrir toda a altura da tela */
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
     pointer-events: none; /* Permite interação com elementos abaixo */
     overflow: hidden; /* Oculta os corações que saem da tela */
   }
   
   .heart {
     position: absolute;
+<<<<<<< HEAD
+    width: 20px; /* Largura do coração */
+    height: 20px; /* Altura do coração */
+    background: url('../src/coração.jpg') no-repeat center; /* Caminho ajustado */
+    background-size: contain; /* Ajusta o tamanho do fundo */
+    animation: fall linear forwards; /* Animação de queda */
+  }
+  
+  /* Animação de queda dos corações */
+=======
     width: 20px;
     height: 20px;
     background: url('../src/coracao-png.webp') no-repeat center;
@@ -77,14 +141,23 @@ body {
     animation: fall linear forwards;
   }
   
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
   @keyframes fall {
     0% {
       transform: translateY(-50px);
       opacity: 1;
     }
     100% {
+<<<<<<< HEAD
+      transform: translateY(100vh); /* Cai até o fundo da página */
+      opacity: 0; /* Desaparece ao cair */
+    }
+  }
+  
+=======
       transform: translateY(100vh); /* Faz os corações caírem até o final da tela */
       opacity: 0;
     }
   }
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
   
