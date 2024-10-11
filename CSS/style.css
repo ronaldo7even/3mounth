@@ -1175,9 +1175,7 @@ body {
     transform: scale(0);
   }
 }
-.not-loaded * {
-  animation-play-state: paused !important;
-}
+
 
 .container {
     display: flex; /* Permite disposição em flexbox */
@@ -1185,9 +1183,8 @@ body {
     align-items: center; /* Centraliza os itens horizontalmente */
 }
 
-<<<<<<< HEAD
-=======
 .button-container {
+  display: block; /* Assegura que o botão seja exibido */
   position: absolute; /* Posiciona o botão de forma absoluta */
   bottom: 20px; /* Alinha o botão na parte inferior da página */
   left: 50%; /* Centraliza horizontalmente */
@@ -1196,17 +1193,19 @@ body {
 }
 
 .button-link {
-  background-color: #6e1d86; /* Cor de fundo do botão */
+  background-color: #590b70; /* Cor de fundo do botão */
   color: white; /* Cor do texto */
-  padding: 3px 10px; /* Espaçamento interno */
+  padding: 5px 15px; /* Aumentando o espaçamento interno para melhor visualização */
   text-decoration: none; /* Remove o sublinhado do link */
   border-radius: 5px; /* Bordas arredondadas */
   transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+  display: inline-block; /* Faz com que o link se comporte como um bloco */
 }
 
 .button-link:hover {
   background-color: #2c0338; /* Cor de fundo ao passar o mouse */
 }
+
 .fade-in {
   opacity: 0; /* Começa invisível */
   transition: opacity 0.5s ease-in; /* Transição suave */
@@ -1215,4 +1214,3 @@ body {
 .fade-in.show {
   opacity: 1; /* Torna visível */
 }
->>>>>>> bc63a303449e5c7819a2885bb760b3564996138f

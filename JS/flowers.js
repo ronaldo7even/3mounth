@@ -5,7 +5,7 @@ onload = () => {
     }, 1000);
   };
 
-<<<<<<< HEAD
+
   onload = () => {
     const c = setTimeout(() => {
       document.body.classList.remove("not-loaded");
@@ -18,8 +18,6 @@ onload = () => {
   };
   
 
-
-=======
   document.addEventListener("DOMContentLoaded", function () {
     const fadeButton = document.getElementById("fadeButton");
   
@@ -29,4 +27,3 @@ onload = () => {
     }, 3000); // Tempo em milissegundos até o botão aparecer
   });
   
->>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
