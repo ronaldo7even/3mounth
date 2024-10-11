@@ -1,3 +1,7 @@
+body {
+  font-family: cursive;
+ 
+}
 *,
 *::after,
 *::before {
@@ -1181,36 +1185,3 @@ body {
     align-items: center; /* Centraliza os itens horizontalmente */
 }
 
-.message-container {
-    display: none; /* Começa invisível */
-    margin-top: 20px; /* Espaço acima da mensagem */
-    color: white; /* Cor do texto */
-    font-size: 1.5em; /* Tamanho da fonte da mensagem */
-    text-align: center; /* Centraliza o texto */
-}
-
-.button-container {
-    display: none; /* Começa invisível */
-    margin-top: 10px; /* Espaço acima do botão */
-    text-align: center; /* Centraliza o botão */
-}
-
-#myButton {
-    background-color: #4CAF50; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove a borda padrão */
-    padding: 15px 32px; /* Espaçamento interno do botão */
-    text-align: center; /* Centraliza o texto do botão */
-    text-decoration: none; /* Remove o sublinhado */
-    display: inline-block; /* Permite o dimensionamento do botão */
-    font-size: 16px; /* Tamanho da fonte do botão */
-    margin: 4px 2px; /* Margem em torno do botão */
-    cursor: pointer; /* Aponta o cursor para mão ao passar por cima */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição para mudança de cor */
-}
-
-/* Efeito ao passar o mouse sobre o botão */
-#myButton:hover {
-    background-color: #ff00b3; /* Cor de fundo ao passar o mouse */
-}
