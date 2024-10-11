@@ -1183,6 +1183,13 @@ body {
     align-items: center; /* Centraliza os itens horizontalmente */
 }
 
+.not-loaded .button-container {
+  display: flex; /* Ou block, dependendo de como você deseja que o botão seja exibido */
+  opacity: 1; /* Garantindo que a opacidade seja 1 */
+  pointer-events: auto; /* Permite a interação com o botão */
+}
+
+
 .button-container {
   display: block; /* Assegura que o botão seja exibido */
   position: absolute; /* Posiciona o botão de forma absoluta */
