@@ -5,6 +5,7 @@ onload = () => {
     }, 1000);
   };
 
+<<<<<<< HEAD
   onload = () => {
     const c = setTimeout(() => {
       document.body.classList.remove("not-loaded");
@@ -18,3 +19,14 @@ onload = () => {
   
 
 
+=======
+  document.addEventListener("DOMContentLoaded", function () {
+    const fadeButton = document.getElementById("fadeButton");
+  
+    // Espera um tempo para simular a animação das flores (substitua 3000 por seu tempo de animação)
+    setTimeout(() => {
+      fadeButton.classList.add("show"); // Adiciona a classe para fazer o fade-in
+    }, 3000); // Tempo em milissegundos até o botão aparecer
+  });
+  
+>>>>>>> bc63a303449e5c7819a2885bb760b3564996138f
